@@ -1,0 +1,10 @@
+error: Must specify value for non-defaulted argument: `b`
+ --> $DIR/second_of_two_required.rs:3:1
+  |
+3 | #[named(defaults(a = false))]
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+...
+9 |     let _ = or!(a = true);
+  |             ------------- in this macro invocation
+  |
+  = note: this error originates in a macro (in Nightly builds, run with -Z macro-backtrace for more info)

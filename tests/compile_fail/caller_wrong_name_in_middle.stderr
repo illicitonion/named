@@ -1,0 +1,10 @@
+error: Unrecognized named argument - got value for argument `d` but only expected [a, b, c]
+ --> $DIR/caller_wrong_name_in_middle.rs:3:1
+  |
+3 | #[named(defaults(a = false, b = false, c = false))]
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+...
+9 |     let _ = or!(a = true, d = true, c = true);
+  |             --------------------------------- in this macro invocation
+  |
+  = note: this error originates in a macro (in Nightly builds, run with -Z macro-backtrace for more info)

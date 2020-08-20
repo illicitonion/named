@@ -1,0 +1,11 @@
+[package]
+name = "tests"
+version = "0.1.0"
+authors = ["Daniel Wagner-Hall <dawagner@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+named = { path = "../named" }
+
+[dev-dependencies]
+trybuild = "1.0.32"

@@ -1,0 +1,5 @@
+error: Unrecognized argument - attribute had argument `c` but function takes arguments: [a, b]
+ --> $DIR/unknown_attr_arg.rs:3:29
+  |
+3 | #[named(defaults(a = false, c = false))]
+  |                             ^

@@ -1,0 +1,14 @@
+error: macro definition is not supported in `trait`s or `impl`s
+ --> $DIR/takes_mutably_borrowed_self.rs:6:5
+  |
+6 |     #[named]
+  |     ^^^^^^^^
+  |
+  = help: consider moving the macro definition out to a nearby module scope
+  = note: this error originates in an attribute macro (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error: `named` does not currently support functions which take `self`.
+ --> $DIR/takes_mutably_borrowed_self.rs:7:20
+  |
+7 |     fn always_true(&mut self) -> bool {
+  |                    ^^^^^^^^^
